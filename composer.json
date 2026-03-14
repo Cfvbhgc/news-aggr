@@ -1,0 +1,27 @@
+{
+    "name": "cfvbhgc/news-aggr",
+    "description": "News Aggregator REST API built with Slim Framework 4",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "slim/slim": "^4.12",
+        "slim/psr7": "^1.6",
+        "php-di/php-di": "^7.0",
+        "php-di/slim-bridge": "^3.4",
+        "vlucas/phpdotenv": "^5.6",
+        "laminas/laminas-feed": "^2.22",
+        "laminas/laminas-http": "^2.19",
+        "ext-pdo": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public",
+        "fetch-feeds": "php bin/fetch-feeds.php"
+    }
+}
